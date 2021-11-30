@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function MenuTable(props){
     const {colorWeight,sugarWeight,colorPrice,sugarPrice,filmPetPrice} = props;
+    const [count ,setCount] = useState(colorPrice + sugarPrice);
+    const handleCount = (e) => {
+        setCount(e.target.value * (colorPrice + sugarPrice))
+    }
     return(
         <React.Fragment>
             <table className="table">
@@ -24,7 +28,12 @@ export default function MenuTable(props){
                     </tr>
                 </tbody>
             </table>
-            <p className="sugar-color-price">مجموع پودر و رنگ : <span>{(colorPrice + sugarPrice).toLocaleString()}</span></p>
+            <p className="sugar-color-price">مجموع پودر و رنگ واحد‌ : <span>{(colorPrice + sugarPrice).toLocaleString()}</span></p>
+            <hr/>
+            <input className="form-control" placeholder="تعداد" onKeyUp={ (e) => handleCount(e) }  />
+            <p className="sugar-color-price" style={{ marginTop: '10px' }}>مجموع پودر و رنگ : <span>{count.toLocaleString()}</span></p>
+
+            
         </React.Fragment>
     );
 }
