@@ -1,0 +1,149 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+@font-face{font-family:IRANSansB;font-style:normal;font-weight:700;src:url(/fonts/IRANSans-Bold-web.eot);src:url(/fonts/IRANSans-Bold-web-1.eot) format('embedded-opentype'),
+    url(/fonts/IRANSans-Bold-web.woff2) format('woff2'),
+    url(/fonts/IRANSans-Bold-web.woff) format('woff'),
+    url(/fonts/IRANSans-Bold-web.ttf) format('truetype')
+    }
+    @font-face{font-family:IRANSansM;font-style:normal;font-weight:500;src:url(/fonts/IRANSans-Medium-web.eot);src:url(/fonts/IRANSans-Medium-web-1.eot) format('embedded-opentype'),
+    url(/fonts/IRANSans-Medium-web.woff2) format('woff2'),
+    url(/fonts/IRANSans-Medium-web.woff) format('woff'),
+    url(/fonts/IRANSans-Medium-web.ttf) format('truetype')
+    }
+    @font-face{font-family:IRANSansL;font-style:normal;font-weight:300;src:url(/fonts/IRANSans-Light-web.eot);src:url(/fonts/IRANSans-Light-web-1.eot) format('embedded-opentype'),
+    url(/fonts/IRANSans-Light-web.woff2) format('woff2'),
+    url(/fonts/IRANSans-Light-web.woff) format('woff'),
+    url(/fonts/IRANSans-Light-web.ttf) format('truetype')
+    }
+    @font-face{font-family:IRANSansU;font-style:normal;font-weight:200;src:url(/fonts/IRANSans-UltraLight-web.eot);src:url(/fonts/IRANSans-UltraLight-web-1.eot) format('embedded-opentype'),
+    url(/fonts/IRANSans-UltraLight-web.woff2) format('woff2'),
+    url(/fonts/IRANSans-UltraLight-web.woff) format('woff'),
+    url(/fonts/IRANSans-UltraLight-web.ttf) format('truetype')
+    }
+    @font-face{font-family:IRANSansW;font-style:normal;font-weight:400;src:url(/fonts/IRANSans-web.eot);src:url(/fonts/IRANSans-web-1.eot) format('embedded-opentype'),
+    url(/fonts/IRANSans-web.woff2) format('woff2'),
+    url(/fonts/IRANSans-web.woff) format('woff'),
+    url(/fonts/IRANSans-web.ttf) format('truetype')
+    }
+
+.dtf-h1{
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+}
+.main-row{
+    display: grid;
+    grid-template-columns: 100vw;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+.menu{
+    margin-right: 39px;
+    text-align: center;
+}
+.menu label{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: IRANSansB;
+}
+.menu li{
+    list-style: none;
+    margin-top: 15px;
+    width: 45%!important;
+    margin-left: 27.5%!important;
+}
+.menu input{
+    text-align: center;
+    font-family: IRANSansW;
+    color: black;
+}
+.menu button{
+    font-family: IRANSansB;
+}
+.menu-icons{
+    text-align: center;
+    color: white;
+    margin-right: -39px;
+}
+.menu-icons i{
+    display: block;
+}
+.icon-cogs{
+    font-size: 25px;
+}
+.icon-down-1{
+    font-size: 15px;
+    margin-top: -15px;
+}
+.menu-wrapper{
+    display: none;
+}
+.menu-icons{
+    display: block;
+    font-family: IRANSansL;
+    direction: rtl;
+}
+.result{
+    margin-right: -39px;
+    
+}
+.result h5{
+    font-family: IRANSansB;
+    color: white;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.result input{
+    width: 70px;
+    display: inline-block;
+}
+.result button{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+table tr{
+    font-weight: bold;
+    font-family: IRANSansB;
+}
+table td{
+    font-family: IRANSansL;
+}
+.calculate-btn{
+    display: grid;
+    grid-template-columns: 74px;
+    justify-content: center;
+}
+.sugar-color-price{
+    font-family: IRANSansL;
+    color: white;
+}
+.sugar-color-price span{
+    color: #3490dc;
+    font-family: IRANSansB;
+}
+#area{
+    display: none;
+}
+.areas-options{
+    display: grid;
+    grid-template-columns: 150px;
+    justify-content: center;
+    font-family: IRANSansB;
+    direction: rtl;
+}
+
