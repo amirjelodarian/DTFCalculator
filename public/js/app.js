@@ -2566,7 +2566,10 @@ function MenuTable(props) {
       style: {
         marginTop: '10px'
       },
-      children: ["\u0645\u062C\u0645\u0648\u0639 \u067E\u0648\u062F\u0631 \u0648 \u0631\u0646\u06AF : ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+      children: [" \u0645\u062C\u0645\u0648\u0639 \u067E\u0648\u062F\u0631 \u0648 \u0631\u0646\u06AF \u06A9\u0644 : ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        style: {
+          color: 'greenyellow'
+        },
         children: count.toLocaleString()
       })]
     })]
