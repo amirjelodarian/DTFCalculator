@@ -8,26 +8,19 @@ export default function MenuTable(props){
     }
     return(
         <React.Fragment>
-            <table className="table">
-                <thead className="thead-dark">
-                    <tr>
-                        <th>وزن رنگ</th>
-                        <th>وزن پودر</th>
-                        <th>قیمت رنگ</th>
-                        <th>قیمت پودر</th>
-                        <th>قیمت رول</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{colorWeight} cc</td>
-                        <td>{sugarWeight} gr</td>
-                        <td>{colorPrice.toLocaleString()} تومان</td>
-                        <td>{sugarPrice.toLocaleString()} تومان</td>
-                        <td>{filmPetPrice.toLocaleString()} تومان</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="grid-table-wrapper">
+                <div className="grid-table grid-table-title">وزن رنگ</div>
+                <div className="grid-table grid-table-answer">{colorWeight} cc</div>
+                <div className="grid-table grid-table-title">وزن پودر</div>
+                <div className="grid-table grid-table-answer">{sugarWeight} gr</div>
+                <div className="grid-table grid-table-title">قیمت رنگ</div>
+                <div className="grid-table grid-table-answer">{colorPrice.toLocaleString()} تومان</div>
+                <div className="grid-table grid-table-title">قیمت پودر</div>
+                <div className="grid-table grid-table-answer">{sugarPrice.toLocaleString()} تومان</div>
+                <div className="grid-table grid-table-title">قیمت رول</div>
+                <div className="grid-table grid-table-answer">{filmPetPrice.toLocaleString()} تومان</div>
+            </div>
+            
             <p className="sugar-color-price">مجموع پودر و رنگ واحد‌ : <span>{(colorPrice + sugarPrice).toLocaleString()}</span></p>
             <hr/>
             <input className="form-control" placeholder="تعداد" onKeyUp={ (e) => handleCount(e) }  />

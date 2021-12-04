@@ -10156,13 +10156,33 @@ body {
   width: 100%;
 }
 
-table tr {
-  font-weight: bold;
-  font-family: IRANSansB;
+.grid-table-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, minmax(18vw, 1fr));
+  grid-template-rows: repeat(2, minmax(35px, 80px));
 }
 
-table td {
+.grid-table {
+  font-weight: bold;
+  font-family: IRANSansB;
+  font-size: 15px;
+}
+
+.grid-table-answer {
   font-family: IRANSansL;
+  font-size: 12px;
+  color: greenyellow;
+  display: grid;
+  align-content: center;
+}
+
+.grid-table-title {
+  background-color: #355C7D;
+  background-color: #343a40;
+  color: #d4c0c0;
+  display: grid;
+  align-content: center;
 }
 
 .calculate-btn {
@@ -10191,4 +10211,23 @@ table td {
   justify-content: center;
   font-family: IRANSansB;
   direction: rtl;
+}
+
+@media screen and (max-width: 449px) {
+  .grid-table {
+    font-size: 10px;
+  }
+
+  .grid-table-answer {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 700px) {
+  .grid-table {
+    font-size: 12px;
+  }
+
+  .grid-table-answer {
+    font-size: 11px;
+  }
 }
